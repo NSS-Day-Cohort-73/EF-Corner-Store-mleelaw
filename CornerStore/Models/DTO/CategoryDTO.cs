@@ -1,12 +1,9 @@
-using System.ComponentModel.DataAnnotations;
+namespace CornerStore.Models.DTO;
 
-namespace CornerStore.Models;
-
-public class Category
+public class CategoryDTO
 {
     public int Id { get; set; }
 
-    [Required]
     public string CategoryName { get; set; }
     public List<Category> Categories { get; set; }
 }
